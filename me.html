@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Sharma - Portfolio</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="me.css">
+</head>
+
+<body>
+
+    <!-- PROFILE SELECTION -->
+    <div id="profile-gate">
+        <h1 class="profile-title">Who's Watching?</h1>
+        <div class="profile-container">
+            <div class="profile-card" onclick="enterSite('Recruiter')">
+                <div class="avatar p1"><i data-lucide="briefcase"></i></div>
+                <span class="profile-name">Recruiter</span>
+            </div>
+            <div class="profile-card" onclick="enterSite('Developer')">
+                <div class="avatar p2"><i data-lucide="code"></i></div>
+                <span class="profile-name">Developer</span>
+            </div>
+            <div class="profile-card" onclick="enterSite('Founder')">
+                <div class="avatar p3"><i data-lucide="rocket"></i></div>
+                <span class="profile-name">Founder</span>
+            </div>
+            <div class="profile-card" onclick="enterSite('Friend')">
+                <div class="avatar p4"><i data-lucide="smile"></i></div>
+                <span class="profile-name">Friend</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN DASHBOARD -->
+    <div id="main-app">
+        <nav id="navbar">
+            <a href="#" class="logo">Aman</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+            <div class="nav-right">
+                <i data-lucide="search" style="width:24px; cursor:pointer;"></i>
+                <i data-lucide="bell" style="width:24px; cursor:pointer;"></i>
+                <div class="avatar p1"
+                    style="width:32px; height:32px; min-width:32px; min-height:32px; cursor:pointer;"></div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <header id="home" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <div class="hero-badge">STUDENT AT PUNJABI UNIVERSITY</div>
+                    <h1 class="hero-title">Aman Sharma</h1>
+                    <p class="hero-desc">Dynamic and results-driven Senior Software Engineer with 1/2 years in
+                        full-stack development. Specialized in building scalable applications and robust security
+                        systems.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-white"
+                            onclick="window.open('https://www.linkedin.com/in/aman-sharma-307744319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', '_blank')">
+                            <i data-lucide="play" fill="black"></i> Resume
+                        </button>
+                        <button class="btn btn-gray" onclick="scrollToSection('experience')">
+                            <i data-lucide="info"></i> Experience
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ROW 1: PROJECTS (Trending Now) -->
+
+        <section id="projects" class="category-row">
+            <h2 class="row-title">Trending Projects</h2>
+            <div class="row-container">
+                <!-- Project 1 -->
+                <!-- <div class="card" onclick="openModal('avataar')">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+                        alt="Project 1">
+                    <div class="card-hover-info">
+                        <div class="match-score">98% Match</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node</span>
+                        </div>
+                        <h4 style="color:white; font-size:0.9rem;">Avataar Ventures</h4>
+                    </div>
+                </div> -->
+                <!-- Project 2 -->
+                <!-- <div class="card" onclick="openModal('dashboard')">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                        alt="Project 2">
+                    <div class="card-hover-info">
+                        <div class="match-score">95% Match</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <h4 style="color:white; font-size:0.9rem;">Corporate Dashboard</h4>
+                    </div>
+                </div> -->
+                <!-- Project 3 -->
+                <!-- <div class="card" onclick="openModal('ecommerce')">
+                    <img src="https://images.unsplash.com/photo-1472851294608-415522184cd3?q=80&w=2070&auto=format&fit=crop"
+                        alt="Project 3">
+                    <div class="card-hover-info">
+                        <div class="match-score">91% Match</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring</span>
+                        </div>
+                        <h4 style="color:white; font-size:0.9rem;">E-Commerce API</h4>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- ROW 2: SKILLS (Top Picks) -->
+        <section id="skills" class="category-row">
+            <h2 class="row-title">Top Skills for Recruiter</h2>
+            <div class="row-container">
+                <div class="skill-card">
+                    <i data-lucide="coffee"></i>
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="atom"></i>
+                    <span class="skill-name">React</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="database"></i>
+                    <span class="skill-name">SQL</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="cloud"></i>
+                    <span class="skill-name">AWS</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="container"></i>
+                    <span class="skill-name">Docker</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="git-branch"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="server"></i>
+                    <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="server"></i>
+                    <span class="skill-name">Flask</span>
+                </div>
+            </div>
+        </section>
+            <!-- CERTIFICATION -->
+        <section id="certification" class="category-row">
+            <h2 class="row-title">Certification</h2>
+            <div class="row-container">
+                <!-- certificate 1 -->
+                <div class="card" onclick="openModal('C++ Essentials 1')">
+                    <img src="cisco certificate.png" 
+                    alt="certificate 1">
+                    <div class="card-hover-info">
+                        <div class="match-score">95% Match</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">DSA</span>
+                        </div>
+                        <h4 style="color:white; font-size:0.9rem;">CISCO</h4>
+                    </div>
+                </div>
+                <!-- certificate 2 -->
+                 <div class="card" onclick="openModal('Flask')">
+                    <img src="flask.png" 
+                    alt="certificate 2">
+                    <div class="card-hover-info">
+                        <div class="match-score">95% Match</div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                        <h4 style="color:white; font-size:0.9rem;">linkedin</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCE (Episodes) -->
+        <section id="experience">
+            <h2 class="row-title">Career Episodes</h2>
+            <div class="episode-list">
+                <!-- Job 1 -->
+                <!-- <div class="episode">
+                    <div class="ep-number">1</div>
+                    <div class="ep-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop"
+                            alt="Company 1">
+                    </div>
+                    <div class="ep-info">
+                        <div class="ep-header">
+                            <span class="ep-title">Senior Java Developer</span>
+                            <span class="ep-duration">2022 - Present</span>
+                        </div>
+                        <p class="ep-desc">Led migration from Monolith to Microservices. Improved API latency by 40%.
+                            Managed a team of 5 junior developers.</p>
+                    </div>
+                </div> -->
+                <!-- Job 2 -->
+                <!-- <div class="episode">
+                    <div class="ep-number">2</div>
+                    <div class="ep-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                            alt="Company 2">
+                    </div>
+                    <div class="ep-info">
+                        <div class="ep-header">
+                            <span class="ep-title">Software Engineer II</span>
+                            <span class="ep-duration">2019 - 2022</span>
+                        </div>
+                        <p class="ep-desc">Developed full-stack features for internal tools using React and Spring Boot.
+                            Implemented CI/CD pipelines using Jenkins.</p>
+                    </div>
+                </div> -->
+                <!-- Job 3 -->
+                <!-- <div class="episode">
+                    <div class="ep-number">3</div>
+                    <div class="ep-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                            alt="Company 3">
+                    </div>
+                    <div class="ep-info">
+                        <div class="ep-header">
+                            <span class="ep-title">Junior Web Developer</span>
+                            <span class="ep-duration">2018 - 2019</span>
+                        </div>
+                        <p class="ep-desc">Frontend development for client websites. Optimization of assets and ensuring
+                            cross-browser compatibility.</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a
+                    href="https://www.linkedin.com/in/aman-sharma-307744319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://github.com/amanx198"><i data-lucide="github"></i></a>
+                <a href="https://x.com/Amanx5002"><i data-lucide="twitter"></i></a>
+                <a href="mailto:amanx500270@gmail.com"><i data-lucide="mail"></i></a>
+            </div>
+            <p>&copy; 2025 Aman Sharma. Built with Netflix vibes.</p>
+        </footer>
+    </div>
+
+    <!-- PROJECT MODAL -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
+        <div class="modal-content">
+            <div class="modal-close" onclick="toggleModal(false)"><i data-lucide="x"></i></div>
+            <div class="modal-hero" id="modal-img" style="background-image: url('https://placehold.co/800x400');"></div>
+            <div class="modal-body">
+                <h2 id="modal-title" style="font-size: 2rem; margin-bottom: 10px;">Project Title</h2>
+                <div class="modal-meta">
+                    <span>98% Match</span>
+                    <span id="modal-year">2024</span>
+                    <span
+                        style="border: 1px solid #666; padding: 0 5px; font-size: 0.7rem; color: #fff; display:flex; align-items:center;">HD</span>
+                </div>
+                <div class="modal-tags" id="modal-tech">
+                    <!-- Tags injected here -->
+                </div>
+                <p id="modal-desc" class="modal-desc">
+                    Project description goes here.
+                </p>
+                <button class="btn btn-red" onclick="window.open('https://github.com/amanx198', '_blank')">
+                    <i data-lucide="github"></i> View Code
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DATA FOR MODALS ---
+        const projectsData = {
+            'avataar': {
+                title: "Avataar Ventures Website",
+                img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+                year: "2023",
+                desc: "Built the frontend of Avataar Ventures' website from scratch, contributing to the brand's online presence and showcasing their services. Focused on high performance and SEO optimization.",
+                tech: ["React", "GSAP", "Tailwind"]
+            },
+            'dashboard': {
+                title: "Corporate Dashboard",
+                img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+                year: "2024",
+                desc: "Revamped the UI of the corporate dashboard, enhancing user experience for over 10,000 customers. Managed backend integration and data visualization modules.",
+                tech: ["AWS", "Python", "D3.js"]
+            },
+            'ecommerce': {
+                title: "E-Commerce API",
+                img: "https://images.unsplash.com/photo-1472851294608-415522184cd3?q=80&w=2070&auto=format&fit=crop",
+                year: "2022",
+                desc: "A robust RESTful API capable of handling 500+ transactions per second. Integrated Stripe payments and optimized database queries for scale.",
+                tech: ["Java", "Spring Boot", "PostgreSQL"]
+            },
+            'chat': {
+                title: "Realtime Chat App",
+                img: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1974&auto=format&fit=crop",
+                year: "2023",
+                desc: "A low-latency chat application allowing users to create rooms and share media. Utilized WebSockets for bi-directional communication.",
+                tech: ["Node.js", "Socket.io", "Redis"]
+            },
+            'portfolio': {
+                title: "Netflix Portfolio",
+                img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop",
+                year: "2025",
+                desc: "The website you are looking at right now! A fully responsive, interactive portfolio designed to mimic the Netflix UI.",
+                tech: ["HTML5", "CSS3", "Vanilla JS"]
+            },
+            'C++ Essentials 1': {
+                title: "CISCO Certification",
+                img: "cisco certificate.png",
+                year: "2025",
+                desc: "Certified in C++ and Data Structures & Algorithms. Offered by Networking Academy certification demonstrating expertise in foundational programming and algorithmic problem solving.",
+                tech: ["C++", "DSA"]
+            },
+            'Flask': {
+                title: "Flask Essential Training",
+                img: "flask.png",
+                year: "2025",
+                desc: "",
+                tech: ["Python","Flask","Web Development"]
+
+            }
+        };
+
+        // --- INITIALIZATION ---
+        document.addEventListener("DOMContentLoaded", () => {
+            lucide.createIcons();
+        });
+
+        // --- PROFILE GATE LOGIC ---
+        function enterSite(profileName) {
+            const gate = document.getElementById('profile-gate');
+            const app = document.getElementById('main-app');
+
+            // Fade out gate
+            gate.style.opacity = '0';
+            gate.style.transition = 'opacity 0.5s';
+
+            setTimeout(() => {
+                gate.classList.add('hidden');
+                app.style.opacity = '1';
+                // Re-trigger icons if needed, though usually fine
+            }, 500);
+        }
+
+        // --- NAVBAR SCROLL EFFECT ---
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // --- SCROLL TO SECTION ---
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // --- MODAL LOGIC ---
+        const modal = document.getElementById('modal-overlay');
+        const modalTitle = document.getElementById('modal-title');
+        const modalImg = document.getElementById('modal-img');
+        const modalDesc = document.getElementById('modal-desc');
+        const modalTech = document.getElementById('modal-tech');
+        const modalYear = document.getElementById('modal-year');
+
+        function openModal(projectId) {
+            const data = projectsData[projectId];
+            if (!data) return;
+
+            modalTitle.textContent = data.title;
+            modalImg.style.backgroundImage = `url('${data.img}')`;
+            modalDesc.textContent = data.desc;
+            modalYear.textContent = data.year;
+
+            // Clear and add tags
+            modalTech.innerHTML = '';
+            data.tech.forEach(tech => {
+                const span = document.createElement('span');
+                span.className = 'tag';
+                span.textContent = tech;
+                modalTech.appendChild(span);
+            });
+
+            toggleModal(true);
+        }
+
+        function toggleModal(show) {
+            if (show) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Stop bg scrolling
+            } else {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking outside
+        function closeModal(e) {
+            if (e.target === modal) {
+                toggleModal(false);
+            }
+        }
+    </script>
+</body>
+
+</html>
