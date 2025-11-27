@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Confession Game</title>
+    <meta name="description" content="A fun interactive love confession game">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-body">
+    <main class="main-content">
+        <div class="game-card">
+        <!-- Game Container -->
+            <div id="gameContainer" class="game-container">
+            <!-- Dynamic Question/Success Content -->
+            <div id="questionContainer" class="question">
+                    <div class="question-content">
+                        <i id="questionIcon"></i>
+                        <h1 id="questionTitle"></h1>
+                        <p id="questionText"></p>
+                    <div id="successContent" class="hidden"></div>
+                </div>
+                    <div id="buttonContainer" class="button-container">
+                        <button id="yesBtn" class="action-button yes-btn">
+                        Yes 💖
+                    </button>
+                        <button id="noBtn" class="action-button no-btn">
+                        No 😢
+                    </button>
+                </div>
+                    <button id="playAgainBtn" class="hidden action-button play-again-btn">
+                    Play Again 🔄
+                </button>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="page-footer">
+        Made by Aman Sharma | 
+        <a href="https://www.instagram.com/aman198x" target="_blank">Instagram</a> | 
+        <a href="https://github.com/amanx198" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
